@@ -2,10 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Calculator</title>
+        <link rel="styleshhet" href="style.css">
    </head>
    <body>
     <h1>Calculator</h1>
+   <form action="" name="clk">
+    <input type="text" name="display" style="width: 120px; height:40px; background-color:white;"><br>
+    <input class="btn" type="button" value="0" onclick="clk.display.value+='0'">
+    <input class="btn" type="button" value="1" onclick="clk.display.value+='1'">
+    <input class="btn" type="button" value="2" onclick="clk.display.value+='2'">
+    <input class="btn" type="button" value="+" onclick="clk.display.value+='+'"style="background-color:#cc5c11;"> <br>
+    <input class="btn" type="button" value="3" onclick="clk.display.value+='3'">
+    <input class="btn" type="button" value="4" onclick="clk.display.value+='4'">
+    <input class="btn" type="button" value="5" onclick="clk.display.value+='5'">
+    <input class="btn" type="button" value="- " onclick="clk.display.value+='- '" style="background-color:#ba55d3;"><br>
+    <input class="btn" type="button" value="6" onclick="clk.display.value+='6'">
+    <input class="btn" type="button" value="7" onclick="clk.display.value+='7'">
+    <input class="btn" type="button" value="8" onclick="clk.display.value+='8'">
+    <input class="btn" type="button" value="* " onclick="clk.display.value+='*'" style="background-color:#7db1b2;" font-size:30px><br>
+    <input class="btn" type="button" value="9" onclick="clk.display.value+='9'">
+    <input class="btn" type="button" value="C" onclick="clk.display.value+=''" style="background-color:#cc0000;">
+    <input class="btn" type="button" value="=" onclick="clk.display.value+= eval(clk.display.value)">
+    <input class="btn" type="button" value="&#247;"  onclick="clk.display.value+='/'" style="background-color:#1f80c9;">
+   </form>
    </body>
 </html>
